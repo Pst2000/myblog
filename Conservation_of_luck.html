@@ -1,0 +1,26 @@
+---
+title: Conservation of Luck
+heading: Conservation of Luck | 运气守恒
+subtitle: 塞翁失马，焉知非福；天道酬勤，功不唐捐；但行好事，莫问前程——人的运气在某种程度上是守恒的。当你感叹“运气真差”的时候，也许好事就要发生啦！当然，反之亦然。不管这一想法是否能被科学证实，但它一定能指引我们更智慧地生活。
+---
+
+<section class="diagonal patterned">
+	<div class="container">
+	    <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_clients/" class="btn"><strong>&#9998;</strong> Manage Clients</a></p>
+		<ul class="image-grid">
+			{% for client in site.clients %}
+				<li>
+					<a href="{{ site.baseurl }}{{ client.url }}">
+						<img src="{% include relative-src.html src=client.image_path %}" alt="{{ person.name }}">
+						<div class="details">
+							<div class="name">{{ client.name }}</div>
+							<div class="position">{{ client.subtitle }}</div>
+						</div>
+					</a>
+				</li>
+			{% endfor %}
+			<li class="filler"></li>
+			<li class="filler"></li>
+		</ul>
+	</div>
+</section>

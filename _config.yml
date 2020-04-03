@@ -1,4 +1,4 @@
-title: Urban Template
+title: hellopst
 url: "hellopst.cn"
 baseurl:
 google_analytics_key:
@@ -6,12 +6,12 @@ google_maps_javascript_api_key:
 disqus_shortname:
 
 # Default description in social shares for the jekyll-seo-tag gem
-description: Jekyll template with example content for a web agency.
+description: Personal blog for pst
 
 # Author details for the jekyll-seo-tag gem
 author:
-  name:
-  email:
+  name: Shaoting Peng
+  email: pst_2000@icloud.com
   twitter: # twitter username without the @ symbol
 
 # Social details for the jekyll-seo-tag gem
