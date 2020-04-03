@@ -1,27 +1,34 @@
 ---
-title: Urban
+title: Hellopst
 ---
 
 <section class="hero diagonal">
 	<div class="container">
-		<h2 class="editable">We build websites</h2>
-		<p class="subtext editable">This is the <strong>Urban</strong> template from <a href="https://cloudcannon.com/">CloudCannon</a>. Urban is a strong foundation for the web presence of your agency.</p>
-		<p><a class="button alt" href="{{ site.baseurl }}/contact/">Contact Us</a></p>
+		{% comment %} <h2 class="editable">LIFE  IN  IDEAS.</h2> {% endcomment %}
+		<p style="font-family:georgia,garamond,serif;font-size:16px;font-style:italic;"><font size = "5">
+		"I shall be telling this with a smile<br>
+		 Somewhere ages and ages hence:<br>
+		 Life is derived from ideas for good<br>
+		 And those pieces are being treasured form now on."<br></font></p>
+		<p class="subtext editable">Anyway——</p>
+		<p class="subtext editable"><font size = "8"><center>Welcome to my blog｜别来无恙</center></font></p>
+		{% comment %} <p><a class="button alt" href="{{ site.baseurl }}/contact/">Contact Us</a></p> {% endcomment %}
 	</div>
 </section>
 
 <section class="diagonal patterned">
 	<div class="container halves">
 		<div>
-			<h3 class="editable">Some of our work</h3>
-			<p class="editable">We take pride in our previous work and our happy customers. We cater to any sector to boost business and increase exposure.</p>
-			<p class="editable"><a href="{{ site.baseurl }}/portfolio/">View Full Portfolio &rarr;</a></p>
+			<h3 class="editable">Conservation of Luck | 运气守恒</h3>
+			<p class="editable">运气既不会凭空产生，也不会凭空消失，它只会从一种形式转化为另一种形式，或者从一个物体转移到其它物体，而运气的总量保持不变。</p>
+			<p class="editable"><a href="{{ site.baseurl }}/portfolio/">查看更多 &rarr;</a></p>
 		</div>
 		<div>
 			<ul class="image-grid">
-				{% for client in site.clients limit: 4 %}
-					<li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
-				{% endfor %}
+					<li><img src="{{ site.baseurl }}/images/运气.jpg" width="200"></li>
+					<li><img src="{{ site.baseurl }}/images/塞翁失马.jpeg" width="200"></li>
+					<li><img src="{{ site.baseurl }}/images/能量守恒.jpg" width="200"></li>
+					<li><img src="{{ site.baseurl }}/images/赌博.jpg" width="200"></li>
 			</ul>
 		</div>
 	</div>
@@ -30,14 +37,22 @@ title: Urban
 <section class="diagonal alternate">
 	<div class="container halves">
 		<div>
-			<ul class="image-list">
-				<li><img src="{{ site.baseurl }}/images/cloudcannon-logo-blue.svg" width="250" style="margin-bottom: 40px;"></li>
-				<li><img src="{{ site.baseurl }}/images/jekyll-logo-black-red-transparent.png" width="300"></li>
+			<ul class="image-grid">
+				<li><img src="{{ site.baseurl }}/images/海绵宝宝.jpeg" width="200"></li>
+				<li><img src="{{ site.baseurl }}/images/我1.jpeg" width="200"></li>
+				<li><img src="{{ site.baseurl }}/images/外滩1.jpeg" width="200"></li>
+				<li><img src="{{ site.baseurl }}/images/上科大1.jpeg" width="200"></li>
 			</ul>
 		</div>
 		<div>
-			<h3 class="editable">Latest software, greatest perfomance</h3>
-			<p class="editable">As a new agency we get reap the benefits of the latest and greatest. We build our websites with the most up to date technology. This ensures your website is fast, efficient and reliable for many years.</p>
+			<h3 class="editable">Main Blog | 主博客</h3>
+			<p class="editable"> 
+			- 脑洞：奇奇怪怪无厘头的想法<br>
+			- 旅游：读万卷书不如行万里路<br>
+			- 琐碎：生活中的那些有的没的<br>
+			- ...
+			</p>
+			<p class="editable"><a href="{{ site.baseurl }}/blog/">查看更多 &rarr;</a></p>
 		</div>
 	</div>
 </section>
